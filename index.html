@@ -8,11 +8,13 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id = "skyTexture" src="aerial.jpg" >
+        <img id = "skyTexture" src="images/aerial.jpg" >
       
       </a-assets>
       <!-- Camera -->
-      <a-camera position="-1 1.4 8"></a-camera>
+      <a-camera position="-1 1.4 8" 
+        animation="property: rotation; to: 0 360 0; dur: 100000; easing: linear; loop: true">
+      </a-camera>
 
       <!-- Sky -->
       <a-sky src="#skyTexture"></a-sky>
